@@ -1,0 +1,64 @@
+/* Cheese — mobile gate (shown only on small viewports) */
+
+/* Hidden by default so desktop sees absolutely no change. */
+.mobile-gate { display: none; }
+
+@media (max-width: 768px) {
+    /* Hide the normal app but keep the body's Cheese background visible. */
+    body > *:not(.mobile-gate) { display: none !important; }
+    html, body { overflow: hidden !important; }
+
+    .mobile-gate {
+        display: flex;
+        position: fixed;
+        inset: 0;
+        z-index: 99999;
+        align-items: center;
+        justify-content: center;
+        padding: 24px;
+        /* subtle scrim over the Cheese background for contrast */
+        background: radial-gradient(120% 120% at 50% 38%,
+                    rgba(6, 9, 16, 0.32), rgba(6, 9, 16, 0.64));
+        animation: mobileGateFade 0.5s ease both;
+    }
+    @keyframes mobileGateFade { from { opacity: 0; } to { opacity: 1; } }
+
+    .mobile-gate-card {
+        width: min(92vw, 380px);
+        padding: 34px 26px 30px;
+        text-align: center;
+        background: rgba(15, 19, 27, 0.72);
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        border-radius: 20px;
+        box-shadow: 0 24px 70px rgba(0, 0, 0, 0.55);
+        -webkit-backdrop-filter: blur(22px) saturate(130%);
+        backdrop-filter: blur(22px) saturate(130%);
+        color: #f2f5fb;
+        font-family: Arial, sans-serif;
+        animation: mobileGatePop 0.55s cubic-bezier(0.22, 0.61, 0.36, 1) both;
+    }
+    @keyframes mobileGatePop {
+        from { opacity: 0; transform: translateY(10px) scale(0.97); }
+        to   { opacity: 1; transform: translateY(0) scale(1); }
+    }
+
+    .mobile-gate-icon {
+        width: 44px;
+        height: 44px;
+        color: rgba(244, 247, 253, 0.85);
+        margin-bottom: 18px;
+    }
+    .mobile-gate-title {
+        font-size: 22px;
+        font-weight: 800;
+        letter-spacing: 0.2px;
+        color: #eef1f8;
+        margin: 0 0 12px 0;
+    }
+    .mobile-gate-text {
+        font-size: 14px;
+        line-height: 1.6;
+        color: rgba(233, 238, 246, 0.78);
+        margin: 0;
+    }
+}

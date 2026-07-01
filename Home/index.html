@@ -1,0 +1,227 @@
+<!doctype html>
+<!-- Cheese — Home page -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cheese</title>
+    <meta name="description" content="Cheese — a modern chess study platform. Analyse games, explore openings, replay famous games, import PGNs, and save your studies." />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../mobile-gate.css" />
+  </head>
+
+  <body>
+
+    <!-- MOBILE GATE (small viewports only) -->
+    <div class="mobile-gate">
+      <div class="mobile-gate-card">
+        <svg class="mobile-gate-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/>
+        </svg>
+        <h1 class="mobile-gate-title">Mobile Support Coming Soon</h1>
+        <p class="mobile-gate-text">Cheese v1.2 is currently optimized for desktop devices. Mobile support is still under development, and a future update will bring a fully responsive experience. Sorry for the inconvenience &mdash; thanks for your patience.</p>
+      </div>
+    </div>
+
+    <!-- LEFT NAV SIDEBAR -->
+
+    <nav class="left-nav">
+
+      <a href="index.html" class="left-nav-logo" aria-label="Cheese — Home" id="logoLink">
+        <svg class="left-nav-logo-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="16" cy="16" r="14" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.18)" stroke-width="1.5"/>
+          <path d="M10 24 L10 21 C10 21 8 19 8 16 C8 12 11 9 13 8 C13 8 12 10 13 11 C14 10 15 8 17 8 C20 8 22 10 22 13 C22 16 20 18 19 19 L19 24 Z" fill="rgba(255,255,255,0.75)"/>
+          <rect x="9" y="23.5" width="14" height="2" rx="1" fill="rgba(255,255,255,0.6)"/>
+        </svg>
+        <span class="left-nav-logo-text">Cheese</span>
+      </a>
+
+      <ul class="left-nav-items">
+
+        <li>
+          <a href="../Analysis/index.html" class="left-nav-item left-nav-item-link">
+            <svg class="left-nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+            </svg>
+            <span>Analysis</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="../Opening Explorer/index.html" class="left-nav-item left-nav-item-link">
+            <svg class="left-nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/>
+            </svg>
+            <span>Opening Explorer</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="../Puzzles/index.html" class="left-nav-item left-nav-item-link">
+            <svg class="left-nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/>
+            </svg>
+            <span>Puzzles</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="../Training/index.html" class="left-nav-item left-nav-item-link">
+            <svg class="left-nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+            </svg>
+            <span>Training</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="../Database/index.html" class="left-nav-item left-nav-item-link">
+            <svg class="left-nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
+            </svg>
+            <span>Database</span>
+          </a>
+        </li>
+
+      </ul>
+
+    </nav>
+
+    <!-- MAIN CONTENT -->
+
+    <div class="home-container">
+      <div class="home-inner">
+
+        <!-- HERO -->
+        <section class="hero">
+
+          <svg class="hero-icon" viewBox="0 0 32 32" fill="none" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="16" cy="16" r="14" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.18)" stroke-width="1.5"/>
+            <path d="M10 24 L10 21 C10 21 8 19 8 16 C8 12 11 9 13 8 C13 8 12 10 13 11 C14 10 15 8 17 8 C20 8 22 10 22 13 C22 16 20 18 19 19 L19 24 Z" fill="rgba(255,255,255,0.82)"/>
+            <rect x="9" y="23.5" width="14" height="2" rx="1" fill="rgba(255,255,255,0.6)"/>
+          </svg>
+
+          <h1 class="hero-title">Cheese</h1>
+          <p class="hero-subtitle">Modern Chess Study Platform</p>
+          <p class="hero-desc">
+            A calm, browser-based workspace for serious study. Analyse your games with a real
+            engine, explore opening theory, replay famous encounters, import any PGN, and keep
+            every analysis saved — all in one place.
+          </p>
+          <p class="hero-tagline">Openings, analysis, and master games — one complete chess study platform.</p>
+
+          <div class="hero-actions">
+            <a href="../Analysis/index.html" class="home-btn home-btn-primary">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+              </svg>
+              <span>Start Analysis</span>
+            </a>
+            <a href="../Opening Explorer/index.html" class="home-btn home-btn-ghost">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/>
+              </svg>
+              <span>Explore Openings</span>
+            </a>
+            <a href="../Database/index.html" class="home-btn home-btn-ghost">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
+              </svg>
+              <span>Browse Database</span>
+            </a>
+          </div>
+
+          <div class="hero-actions hero-actions-secondary">
+            <a href="../Puzzles/index.html" class="home-btn home-btn-primary">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/>
+              </svg>
+              <span>Puzzles</span>
+            </a>
+            <a href="../Training/index.html" class="home-btn home-btn-ghost">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polygon points="6 4 20 12 6 20 6 4"/>
+              </svg>
+              <span>Play Stockfish</span>
+            </a>
+          </div>
+
+        </section>
+
+        <!-- FEATURES -->
+        <section class="features">
+
+          <h2 class="features-heading">Everything you need to study</h2>
+
+          <div class="feature-grid">
+
+            <div class="feature-card">
+              <div class="feature-card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+                </svg>
+              </div>
+              <h3 class="feature-card-title">Stockfish Analysis</h3>
+              <p class="feature-card-desc">Evaluate any position in real time with Stockfish 18 and a live evaluation bar.</p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/>
+                </svg>
+              </div>
+              <h3 class="feature-card-title">Opening Explorer</h3>
+              <p class="feature-card-desc">Search a complete ECO database and jump straight into any line on the board.</p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/>
+                  <polyline points="17 21 17 13 7 13 7 21"/><polyline points="7 3 7 8 15 8"/>
+                </svg>
+              </div>
+              <h3 class="feature-card-title">Persistent Saves</h3>
+              <p class="feature-card-desc">Name and store your analyses locally, then reopen any study whenever you like.</p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/>
+                </svg>
+              </div>
+              <h3 class="feature-card-title">PGN Import</h3>
+              <p class="feature-card-desc">Paste any PGN and replay the entire game on the analysis board, move by move.</p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/>
+                </svg>
+              </div>
+              <h3 class="feature-card-title">Famous Games</h3>
+              <p class="feature-card-desc">Revisit legendary encounters and study how the greats handled every phase.</p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/>
+                </svg>
+              </div>
+              <h3 class="feature-card-title">Modern Interface</h3>
+              <p class="feature-card-desc">A calm glassmorphism interface that stays consistent across every page.</p>
+            </div>
+
+          </div>
+        </section>
+
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
