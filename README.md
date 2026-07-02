@@ -96,6 +96,8 @@ This project is licensed under the **GNU General Public License v3.0 (GPL-3.0)**
 
 You are free to use, study, share, and modify Cheese under the terms of the GPL-3.0. Any distributed derivative works must remain under the same license. See the [LICENSE](LICENSE) file for the full text.
 
+© 2026 Vihaan Productions™
+
 ---
 
 ## Thank You
